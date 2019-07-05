@@ -1,0 +1,77 @@
+.welcomeMessege
+{
+  padding-left: 20%;
+  padding-top:20%;
+}
+.welcomeMessege h1
+{
+  text-align: center;
+  margin-left: -50%;
+  font-size: 80px;
+}
+
+/* top menu  */
+#option_nav
+{
+  background-color: black;
+  height:700px;
+  padding-left: 10px;
+}
+#option_nav li
+{
+  list-style:none;
+  margin:0px;
+}
+#option_nav li  a
+{
+  color: white;
+  font-size: 20px;
+}
+#option_nav li a img{
+  width: 20px;
+  height:20px;
+  margin-right: 5px;
+}
+
+/*  main navigation */
+
+nav{
+  background-color: black;
+  border-bottom: 2px solid white;
+}
+#main-nav li{
+  display: inline-block;
+  padding: 10px;
+}
+#main-nav li a{
+  color: white
+}
+#main-nav ul {
+  margin: 0px;
+  padding-left: 7px;
+}
+
+form
+{
+  width: 5px;
+}
+.admincontact
+{
+  padding: 3px;
+  border-bottom: 1px solid #ccc;
+}
+
+.addNewProduct
+{
+  width: 400px;
+}
+
+.addNewProduct .form-group
+{
+  width: 400px;
+}
+.addNewProduct input[type="submit"]
+{
+  text-align: center;
+  width: 100px;
+}

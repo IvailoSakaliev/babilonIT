@@ -1,0 +1,849 @@
+body
+{
+
+	background-image: url(../images/home.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow-x: hidden;
+}
+nav
+{
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+
+nav .col-md-8
+{
+	text-align: right;
+}
+.fladBackOut
+{
+	animation-name:fladBackOut;
+	animation-duration: 0.4s;
+	background-color: transparent;
+}
+.fladBack
+{
+	animation-name:fladBack;
+	animation-duration: 0.1s;
+	background-color: black;
+}
+@keyframes fladBack
+{
+	0%{background-color:  transparent;}
+	100%{background-color: black;}
+}
+@keyframes fladBackOut
+{
+	0%{background-color:  black;}
+	100%{background-color: transparent;}
+}
+.header
+{
+		height: 700px;
+		background-color: transparent !important;
+		text-align: center;
+		vertical-align: center;
+		color:white;
+		padding-top: 10%
+}
+.header h1
+{
+	font-size: 80px;
+	margin-bottom: 70px;
+}
+.headerOtherPage
+{
+	height: 345px;
+	background-color: transparent !important;
+}
+
+.row
+{
+	background-color:  white !important;
+}
+#main-nav
+{
+	padding: 0px;
+	padding-top: 14px;
+	margin: 0px;
+}
+#main-nav li div
+{
+	width: 0%;
+	height: 3px;
+	background-color: white;
+	
+}
+
+
+.changeWidth
+{
+	animation-name:menu;
+	animation-duration: 0.7s;
+}
+@keyframes menu
+{
+	from{width:  0%;}
+	to{width: 100%;}
+}
+.changeWidthMinus
+{
+	animation-name:menus;
+	animation-duration: 0.7s;
+}
+@keyframes menus
+{
+	from{width:  100%;}
+	to{width: 0%;}
+}
+#main-nav li
+{
+	display: inline-block;
+	padding: 10px;
+	color: white
+}
+#main-nav li:hover
+{
+ 	cursor: pointer;
+ 	text-decoration: none;
+}
+#main-nav li a
+{
+	font-size: 15px;
+	color: white;
+}
+#main-nav li a:hover
+{
+	text-decoration: none;
+}
+#sub-menu
+{
+	position: absolute;
+	display: none;
+	padding: 0px;
+	z-index: 999;
+	width: 200px;
+}
+#sub-menu li
+{
+	width: 200px;
+}
+.headerHomeLink
+{
+	padding: 10px;
+}
+.headerHomeLink a
+{
+	color: white
+}
+.header button
+{
+	padding: 10px;
+	background-color: transparent;
+	border:1px solid white;
+}
+.shortImages
+{
+	text-align: center;
+	padding: 10px;
+	display: none;
+	margin-bottom: 10px;
+}
+
+.shortImages img
+{
+	width: 150px;
+	height: 150px;
+}
+.shortImages a
+{
+	text-decoration: none;
+	padding: 10px 25px;
+	background-color:  #47d147;
+	color:white;
+	border-radius: 7px;
+}
+.shortImages a:hover
+{
+	text-decoration: none;
+	color: white;
+}
+
+
+.contact
+{
+	display: none;
+}
+
+/*soail and footer option*/
+footer
+{
+	background-color: black;
+	padding: 7px;
+	color: white;
+}
+.footer
+{
+	background-color: black !important;
+}
+.socialIcon div
+{
+	display: inline-block;
+}
+.social
+{
+	animation-name:social ;
+	animation-duration: 0.5s;
+}
+@keyframes social
+{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+.socialOut
+{
+	animation-name:socialOut ;
+	animation-duration: 0.5s;
+}
+@keyframes socialOut
+{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+.socialIcon img
+{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+}
+.socialIcon div
+{
+	background-size: 40px 40px;
+}
+
+.copyright a
+{
+	color: white;
+}
+
+
+/* contact from*/
+.contactUs
+{
+	background-image: url('../images/sendEmail.jpg');
+	background-size: 100%;
+	height:550px;
+	padding-top: 20px;
+
+}
+
+
+/* form contact*/
+input[type=submit]
+{
+	margin-top: 10px;
+}
+.contactFrom
+{
+	background-color: transparent !important;
+}
+.form-control
+{
+	border: 1px solid black !important;
+}
+
+.progress
+{
+	border:1px solid  #999;
+	text-align: center;
+	color:white;
+}
+.experiance h2
+{
+	margin-bottom: 40px;
+}
+.experiance h4
+{
+	margin-bottom:  50px;
+}
+
+/* project presentation*/
+.projectPresentaation
+{
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 300px;
+	width: 350px !important;
+	padding: 0px !important;
+	margin: 10px 10px;
+}
+.title
+{
+	background-color: rgba(0,0,0,0.8);
+	width:100%;
+	margin: 0px;
+	color: white;
+	font-family: arial;
+	text-align: center;
+	font-size: 20px;
+    box-shadow:  0px 20px 120px #888888;
+}
+.description
+{
+	display: none;
+	background-color: rgba(0,0,0,0.8);
+	width: 100%;
+	height: 90%;
+	margin: 0px !important;
+
+}
+.description a
+{
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	margin-left: 130px !important;
+}
+.description p
+{
+	color: white;
+	font-size:15px;
+	position: absolute;
+	bottom: 50px;
+	padding: 7px;
+}
+
+/*biography*/
+.biography p
+{
+	font-size: 18px;
+}
+#never
+{
+	text-align: center;
+	font-size: 40px !important;
+	font-weight: bold
+}
+.topButton
+{
+	position: fixed;
+	bottom: 10px;
+	right:10px;
+	display: none;
+
+}
+.topButton img{
+	width: 35px;
+	height: 35px;
+}
+button{
+	margin-top: 5% !important;
+	width: 150px;
+	border-radius: 12px;
+	padding: 10px 40px;
+	border: 2px solid white;
+	background-color: transparent;
+	color:white;
+
+}
+.chat
+{
+	position: fixed;
+	bottom: 50px;
+	right: 20px;
+}
+.chat img
+{
+	width: 40px;
+}
+.chat img:hover
+{
+	cursor: pointer;
+}
+.chatWindow
+{
+
+	position: fixed;
+	bottom: 0px;
+	right: 100px;
+
+}
+.chatWindow .mainLi 
+{border-top: 1px solid #aaa;
+	width: 250px;
+	height: 30px;
+	background-color: white;
+	padding: 5px 10px;
+}
+.chatWindow .mainLi:hover
+{
+	cursor: pointer;	
+}
+
+.chatInfo
+{
+	position: fixed;
+	bottom: 30px;
+	right: 100px;
+	width: 250px;
+	height: 400px;
+	background-color: white;
+}
+
+/* chat window*/
+.messeges
+{
+	width: 100%;
+	height: 86%
+}
+#messege
+{
+	width: 112%
+}
+.inputBox .col-md-10
+{
+	padding-left: 1px;
+}
+.inputBox .col-md-1
+{
+	padding-right: 5px;
+}
+#sendMEssege
+{
+	margin-right: 5px;
+}
+#sendMEssege:hover
+{
+	cursor: pointer;
+}
+#client
+{
+	width: 100%;
+	color: white;
+	padding: 2px;
+	background-color: #FF9B00;
+	float: left;
+}
+#client p
+{
+	padding: 0px;
+	margin:0px;
+	float: left;
+}
+#me
+{
+	width: 100%;
+	padding: 2px;
+	background-color: black;
+	color: white;
+	float: right
+}
+#me p
+{
+	padding: 0px;
+	margin:0px;
+	float: right;
+}
+
+/*platroms*/
+.imagePlatform
+{
+	margin-bottom: 50px;
+	text-align: center;
+}
+.imagePlatform img
+{
+	width: 80%;
+}
+.platformImage
+{
+	height:140px;
+}
+
+
+/* home covers*/
+.welcomeCovers
+{
+	height: 500px !important;
+}
+
+.ux
+{
+	text-align: center;
+}
+.ax
+{
+	display: none;
+	height: 100% !important;
+	background-size: 100%;
+	background-position: center;
+}
+.ax .container
+{
+	padding-top: 10%;
+	text-align: center;
+}
+.ax a
+{
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+	width: 200px;
+}
+.ax  img
+{
+	width: 100%;
+	height: 100% !important
+}
+.ax  .row
+{
+	background-color: transparent !important;
+}
+.ax  h2
+{
+	color: white;
+	 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.ax  h3
+{
+	color: white;
+	margin-bottom: 50px;
+	 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.ax  h4
+{
+	color: white;
+}
+.ax  .row 
+{
+	background-color: transparent !important;
+	color: black;
+}
+.dark
+{
+	margin: 0px;
+	height: 100%;
+	padding: 20px;
+	background-color: rgba(0,0,0,0.4);
+}
+
+
+.ax .row .serviseimage
+{
+	background-color: transparent !important;
+}
+
+.serviseImage
+{
+	display: inline-block;
+	margin-right: 10px;
+	width: 70px;
+	height: 70px;
+}
+.platformImages .col-md-2
+{
+	text-align: center;
+}
+.left
+{
+	bottom: 10px;
+	right:20px;
+}
+.projects
+{
+	padding-bottom: 30px;
+}
+.projects img
+{
+	width: 100%
+}
+
+.infoPlatform
+{
+	position: absolute;
+	top: 0px;
+	display: none;
+}
+
+.serviseInfo
+{
+	margin-bottom: 40px;
+}
+.serviseInfo h2
+{
+	font-size: 70px;
+}
+
+.serviseInfo h4
+{
+	font-size: 20px;
+}
+
+.serviseInfo img
+{
+	width: 70px;
+}
+.servise button
+{
+	margin: 10px;
+	color: white;
+	font-weight: bold;
+	width: 250px;
+}
+
+
+
+
+
+
+.contactPage
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0, 0.5);
+	width: 100%;
+	height: 120%;
+	z-index: 999;
+	padding-top:  8%;
+	color: white;
+	display: none;	
+}
+textarea
+{
+	width: 100%
+}
+
+.contactPage h1
+{
+	color: white;
+}
+.contactPage label
+{
+	color: white;
+}
+.contactForm
+{
+	position: absolute;
+	width: 40%;
+	top: 7%;
+	left: 36%;
+	z-index: 999;
+	color: white;
+	display: none;	
+}
+.contactForm textarea
+{
+	width: 380px;
+	padding: 0px;
+}
+.closeContact
+{
+	position: absolute;
+	top: 0px;
+	right:50px;
+}
+.send
+{
+	float: right;
+	width: 150px;
+	height: 30px;
+
+
+
+}
+.closeContact:hover
+{
+	cursor: pointer;
+}
+
+.alertBoxOK
+{
+	width: 500px !important;
+	text-align: center;
+	position: fixed;
+	top: 10%;
+	left: 30%;
+	display: none;
+}
+.alertBoxError
+{
+	width: 500px !important;
+	text-align: center;
+	position: fixed;
+	top: 10%;
+	left: 30%;
+	display: none;
+}
+
+#email-info , #message-info, #subject-info
+{
+	display: none;
+}
+
+.manager
+{
+	height: 300px;
+	margin:20px !important;
+	border-radius: 50%;
+	background-image: url(../images/boss.jpg);
+	background-size: 100%;
+}
+
+@media only screen and (max-width: 1000px) 
+{
+	.headerHomeLink
+	{
+		text-align: center;
+	}
+	.header
+	{
+		text-align: center;
+		width: 100%;
+	}
+	.header button
+	{
+		margin-left: 0px;
+	}
+	.headerInfo
+	{
+		margin-left: 0px;
+	}
+	#main-nav
+	{
+		text-align: center;
+	}
+	.row
+	{
+		width: 97%;
+	}
+	nav
+	{
+		width: 100% !important;
+	}
+	footer
+	{
+		width: 100%;
+	}
+	.contact
+	{
+		margin-left: 10px;
+	}
+	.careerManager
+	{
+		margin-left: 150px;
+	}
+	.row
+	{
+		width: 100%
+	}
+	#email, #subject
+	{
+		width: 197%;
+	}
+	.contactUs
+	{
+		width: 100%;
+	}
+	.contactUs input
+	{
+		width: 100%
+	}
+	.headerOtherPage
+	{
+		background-size: 200%;
+		width: 100% !important;
+		height: 270px;
+	}
+	.manager
+	{
+		width: 300px;
+		margin-left: 30%  !important;
+	}
+	.careerManager
+	{
+		text-align: center;
+	}
+	.projects
+	{
+		text-align: center;
+		width: 995px;
+	}
+	.projects .col-md-4
+	{
+		text-align: center;
+		width: 400px;
+		margin-left: 25%;
+	}
+	.platformImage
+	{
+		width: 20%;
+		margin-left: 40%;
+	}
+	.platformss
+	{
+		text-align: center;
+		width: 995px;
+	}
+	nav
+	{
+		width: 100%;
+		background-color: black;
+	}
+	.header
+	{
+		height:548px;
+	}
+
+
+	.headerInfo h1
+	{
+		padding-top: 100px;
+		font-size: 50px;
+	}
+	.headerInfo h3
+	{
+		margin-top: -20px !important;
+		font-size: 30px;
+	}
+	.header button
+	{
+		margin-top: 0px !important;
+	}
+	.welcomeCovers
+	{
+		width: 100%;
+		display: block;
+	}
+	.ax
+	{
+		width: 995px;
+		display: block;
+	}
+	.android
+	{
+		height: 400px !important;
+	}
+	.contact
+	{
+		display: block;
+	}
+	.contactUs
+	{
+		display: block;
+		height: 650px;
+	}
+	.contactFrom
+	{
+		width: 55%
+	}
+	.contactPage
+	{
+		width: 115%
+	}
+}
